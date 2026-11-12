@@ -218,11 +218,9 @@ compiler.
 
 ### 1. Clone the repository
 
-Replace `OWNER` and `REPOSITORY` with the GitHub account and repository name:
-
 ```sh
 git clone https://github.com/razzaqmohammed22/2D_Incompressible_Solver_Development.git
-cd REPOSITORY
+cd 2D_Incompressible_Solver_Development
 ```
 
 Run the remaining commands from this project directory (the one containing
@@ -281,17 +279,28 @@ If Visual Studio is installed as Professional or Enterprise, replace
 ### Linux or macOS
 
 With CMake and a C++17 compiler installed, configure and build from the cloned
-project directory:
+project directory. The CMake executable target is named `CFD_Solver`. On
+Linux and macOS, the built executable normally has no file extension:
 
 ```sh
 cmake -S . -B build
 cmake --build build
 ```
 
-Run the solver:
+For the default single-configuration generators (such as Unix Makefiles or
+Ninja), run:
 
 ```sh
 ./build/CFD_Solver
+```
+
+If you explicitly configure a multi-configuration generator such as Xcode,
+specify the configuration when building and include it in the executable
+path:
+
+```sh
+cmake --build build --config Release
+./build/Release/CFD_Solver
 ```
 
 The solver writes or replaces `results.csv` in the current working directory.
@@ -345,4 +354,3 @@ for viewing.
 │   └── main.cpp
 └── visualize.py
 ```
-
