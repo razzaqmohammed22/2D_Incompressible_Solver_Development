@@ -346,5 +346,3 @@ for viewing.
 └── visualize.py
 ```
 
-Build directories, generated CSV data, and generated plots are not source
-files; `.gitignore` excludes them from Git.
