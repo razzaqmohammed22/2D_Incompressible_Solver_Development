@@ -1,0 +1,12 @@
+/build/
+/build-*/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+/results.csv
+/velocity_magnitude.png
+/velocity_vectors.png
+/pressure_contours.png
+__pycache__/
+*.py[cod]
