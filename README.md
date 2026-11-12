@@ -256,7 +256,7 @@ cmake --build build --config Release
 Run the solver from the project directory:
 
 ```powershell
-.\build\Release\CFD_Solver.exe
+.\build\Release\2D_Incompressible_Solver_Development.exe
 ```
 
 If PowerShell says `cmake` is not recognized, CMake is either not installed or
@@ -291,7 +291,7 @@ For the default single-configuration generators (such as Unix Makefiles or
 Ninja), run:
 
 ```sh
-./build/CFD_Solver
+./build/2D_Incompressible_Solver_Development
 ```
 
 If you explicitly configure a multi-configuration generator such as Xcode,
@@ -300,7 +300,7 @@ path:
 
 ```sh
 cmake --build build --config Release
-./build/Release/CFD_Solver
+./build/Release/2D_Incompressible_Solver_Development
 ```
 
 The solver writes or replaces `results.csv` in the current working directory.
@@ -309,7 +309,7 @@ Run it from the project directory if you want the CSV saved alongside
 divergence.
 
 
-## Results and optional plots
+## Results and plots
 
 The solver writes `results.csv` with one row per physical cell and these
 columns:
